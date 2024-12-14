@@ -26,13 +26,13 @@ def split_text_into_chunks(text, max_length):
 
 # Selenium setup
 options = webdriver.ChromeOptions()
-options.add_argument("user-data-dir=C:/Users/rsdan/Onedrive/Desktop/whatsapp-automation/Profile")  # New profile directory
+options.add_argument("user-data-dir=C:/Users/sanid/Desktop/whatsapp-automation/Profile")  # New profile directory
 service = Service('chromedriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 driver.get("https://web.whatsapp.com/")
 
 wait = WebDriverWait(driver, 300)
-target = '"Sani"'
+target = '"Riddhi"'
 
 # Read lyrics file
 with open('lyrics.txt', 'r') as lyrics:
